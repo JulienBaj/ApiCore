@@ -88,11 +88,11 @@ public class Templator: Service {
         url.appendPathComponent("templates")
         url.appendPathComponent("email")
         
-        do {
-            try FileManager.default.createDirectory(atPath: url.path, withIntermediateDirectories: true)
-        } catch {
-            fatalError("Unable to create templates folder structure")
-        }
+    //    do {
+    //        try FileManager.default.createDirectory(atPath: url.path, withIntermediateDirectories: true)
+    //    } catch {
+    //        fatalError("Unable to create templates folder structure")
+    //    }
         
         url.appendPathComponent(fileName)
         url.appendPathExtension("leaf")
